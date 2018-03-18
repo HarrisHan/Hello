@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tjs-sV-KHw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6O2-7O-eG4">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -132,20 +132,50 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ejk-Cx-10y">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqu-vW-7f9">
+                                <rect key="frame" x="182" y="582" width="10" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fu0-vJ-AMr"/>
+                                    <constraint firstAttribute="width" constant="10" id="lQ2-ah-t2B"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEE-bb-eGh">
+                                <rect key="frame" x="192" y="582" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="zLF-Vb-XxS"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="Signup"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC5-yN-rtH">
+                                <rect key="frame" x="62" y="582" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="fvd-Cs-m1T"/>
+                                </constraints>
+                                <state key="normal" image="Login"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="OC5-yN-rtH" firstAttribute="height" secondItem="jqu-vW-7f9" secondAttribute="height" id="0Fx-Ip-Qxm"/>
+                            <constraint firstItem="jqu-vW-7f9" firstAttribute="centerX" secondItem="4rd-OZ-FWF" secondAttribute="centerX" id="5NG-hS-dQi"/>
                             <constraint firstItem="Ejk-Cx-10y" firstAttribute="leading" secondItem="kbn-lL-y2l" secondAttribute="leading" id="6cM-ZR-Dun"/>
+                            <constraint firstItem="kbn-lL-y2l" firstAttribute="bottom" secondItem="jqu-vW-7f9" secondAttribute="bottom" constant="45" id="7hi-5O-ZNl"/>
+                            <constraint firstItem="pEE-bb-eGh" firstAttribute="height" secondItem="jqu-vW-7f9" secondAttribute="height" id="8JH-kz-Jir"/>
+                            <constraint firstItem="pEE-bb-eGh" firstAttribute="leading" secondItem="jqu-vW-7f9" secondAttribute="trailing" id="AhN-is-5wY"/>
                             <constraint firstItem="kbn-lL-y2l" firstAttribute="trailing" secondItem="Ejk-Cx-10y" secondAttribute="trailing" id="Avw-X0-DlU"/>
+                            <constraint firstItem="OC5-yN-rtH" firstAttribute="trailing" secondItem="jqu-vW-7f9" secondAttribute="leading" id="BUy-CJ-dMA"/>
                             <constraint firstItem="kbn-lL-y2l" firstAttribute="bottom" secondItem="Ejk-Cx-10y" secondAttribute="bottom" id="CzP-J7-5fk"/>
                             <constraint firstItem="Ejk-Cx-10y" firstAttribute="top" secondItem="kbn-lL-y2l" secondAttribute="top" id="Q4x-li-A7j"/>
+                            <constraint firstItem="OC5-yN-rtH" firstAttribute="centerY" secondItem="jqu-vW-7f9" secondAttribute="centerY" id="d20-5y-bA2"/>
+                            <constraint firstItem="pEE-bb-eGh" firstAttribute="centerY" secondItem="jqu-vW-7f9" secondAttribute="centerY" id="rlO-BJ-6E0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kbn-lL-y2l"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Wp-08-0CZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803" y="1815"/>
+            <point key="canvasLocation" x="802.39999999999998" y="1814.8425787106448"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="OEN-V9-S91">
@@ -195,6 +225,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Login" width="240" height="80"/>
+        <image name="Signup" width="240" height="80"/>
         <image name="login_bg" width="750" height="1334"/>
     </resources>
 </document>
