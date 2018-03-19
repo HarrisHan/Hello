@@ -1,4 +1,4 @@
 language: swift
 xcode_project: Hello/Hello.xcodeproj # path to your xcodeproj folder
 xcode_scheme: Hello
-
+osx_image: xcode9.2
