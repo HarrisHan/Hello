@@ -1,4 +1,6 @@
 language: swift
-xcode_project: Hello/Hello.xcodeproj # path to your xcodeproj folder
+xcode_project: ./Hello.xcodeproj # path to your xcodeproj folder
 xcode_scheme: Hello
 osx_image: xcode9.2
+script:
+  - xcodebuild clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
